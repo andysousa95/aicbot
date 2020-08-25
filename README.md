@@ -1,30 +1,22 @@
 <h1 align="center">
-  AIC Bot, O melhor do melhor
+  AIC Bot, usefull bot for you stay tunned on NBA and NFL!
 </h1>
 <div align="center" >
 
-> explicar o que é o bot
+> It's a basically bot code, if you want to use, just copy the code and use in your Discord bot. 
 
- <h2>mais coisas aqui</h2>
 
-> mais coisas
-> mais coisas 2
->  mais coisas 3
 
 [![GitHub issues](https://github.com/andysousa95/aicbot/issues)
-[![GitHub license] licensa
+[![GitHub license] license still in progress.
 
 </div>
 
 # Usage
 
-explicar como usar
-
-# Preview
-
-imagem
-
----
+Get the token in discord developer(https://discord.com/developers), put the token in .env file(TOKEN field);
+After this, get the library of discord.js and npm(links bellow);
+Implement the functions that you want and enjoy!
 
 # Contribution:
 
@@ -38,13 +30,14 @@ imagem
 
 ## 2. Execute basic testing
 
-explicar como faz o teste basico
+Up your bot to server and test the commands in the channels. Also, you can change the prefix, commands and the description of it.
 
 
 ## Prerequisites
 
 - Install [Node.js](https://nodejs.org)
 - Install [npm](https://www.npmjs.com/)
+- Install [discord.js(https://discord.js.org/#/)]
 
 ## Available Scripts
 
@@ -56,16 +49,12 @@ In the project directory, you can run:
 
 ### `npm start`
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000)
-
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+npm start will run your bot using your PC as host for it, this command should be use in shell.
 
 ## Author
 
-[andysousa95](https://twitter.com/)
+[andysousa95](https://twitter.com/filler753)
 
 ## License
 
-[MIT] faltou o link
+[MIT] in progress.
