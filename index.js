@@ -18,7 +18,7 @@ bot.login(process.env.TOKEN);
 
 bot.on('message', async (message) => {
   
-  let blackListed = ['pinto', 'buceta', 'filho da puta', 'nigga', 'viado', 'deyde', 'piroca', 'mongoloide', 'vai tomar no cu', 'vtnc', 'trouxa'];
+  let blackListed = ['COLOQUE AS PALAVRAS QUE DESEJA TAXAR NO FILTRO'];
   let procuraTexto = false;
   for(var i in blackListed) {
     if(message.content.toLowerCase().includes(blackListed[i.toLowerCase()])) procuraTexto = true;
@@ -28,10 +28,10 @@ bot.on('message', async (message) => {
       await message.channel.send(`Mandou mal ${message.author}, pare com o thrash talk e foque no jogo!`);
     };
     
-    const comandos = [' !comandos', ' !bot', ' !twitch', ' !youtube ', ' !jogonba'];
+    const comandos = ['CUSTOMIZE AQUI SEUS COMANDOS'];
     const botMsg = "Olá! Sou o AIC Bot e irei te auxiliar a gerenciar este servidor no Discord, qualquer coisa é só me chamar ;).";
-    const twt = "Nosso canal na Twitch: https://www.twitch.tv/alexisidorochannel";
-    const ytb = "Nosso canal no Youtube: https://www.youtube.com/c/AlexIsidoro";
+    const twt = "LINK DO SEU CANAL NA TWITCH";
+    const ytb = "LINK DO SEU CANAL NO YOUTUBE";
     const nba = "Data: 25/08/2020\n\nNuggets x Jazz 19:30Hs;\nClippers x Mavericks 22:00Hs"
 
     if(message.content.startsWith('!comandos')){
@@ -74,8 +74,8 @@ bot.on('message', async (message) => {
 
 bot.on("guildMemberAdd", async (member) => {
 
-    const guild = bot.guilds.cache.get('699042573989183538');
-    const welcomeChannel = bot.channels.cache.get('738582801628004372');
+    const guild = bot.guilds.cache.get('ID DO SEU SERVIDOR');
+    const welcomeChannel = bot.channels.cache.get('CANAL QUE VC DESEJA ONDE A MESSAGEM SEJA ENVIADA');
     var role = member.guild.roles.cache.find(role => role.name === "Membro")
 
     if (guild != member.guild) {
@@ -96,37 +96,15 @@ bot.on("guildMemberAdd", async (member) => {
         welcomeChannel.send(embed);
     }
 });
-/*
+
 bot.on('message', async (message) => {
 
 if(message.content.startsWith('!rChannel')){
-  const rulesChannel = bot.channels.cache.get('738582834335449141');
+  const rulesChannel = bot.channels.cache.get('CANAL QUE VC DESEJA ONDE A MESSAGEM SEJA ENVIADA');
   const regras = await new Discord.MessageEmbed()
   .setColor("#000000")
   .setTitle(`**REGRAS DO SERVIDOR, LEIA TODAS E NÃO PULE NENHUMA**`)
-  .setDescription(`
-1 - É proibido qualquer tipo de preconceito, racismo, xenofobia, homofobia e qualquer tipo de ofensa, lembrem-se que somos iguais, independente de cor da pele ou estatura do corpo. Caso algum ADM ou algum membro da Staff veja a situação,  será advertido(a), caso haja reincidências o(a) mesmo(a) será banido(a);
-
-2 - Sem spam ou flood nos canais(imagens, links e mensagens);
-
-3 - Cada canal tem sua finalidade, o canal(voz e texto) de NBA deve-se falar apenas de NBA, o de NFL apenas de NFL e assim por diante. Mensagens de assuntos em canais incorretos, serão apagadas;
-
-4 - Notícias enviadas DEVEM ser checadas para evitar Fake News, por gentileza, chequem antes de enviar nos canais, ou as mesmas serão apagadas(o mesmo vale para notícias tendenciosas);
-
-5 - Zoeiras e provocações SÃO LIBERADAS DESDE QUE, NÃO VIRE BRIGAS E/OU DISCUSSÕES, caso aconteça os(as) envolvidos(as) serão advertidos(as), em caso de reincidências, o banimento será aplicado;
-
-6 - Proibido CRITICAR LADO POLÍTICO E RELIGIOSO das outras pessoas, cada um vive sua vida da forma como bem entende, e não cabe a você decidir o que cada um segue, acredita ou crê. Respeito é bom e cabe em todos os lugares;
-
-7 - Proibido qualquer tipo de pornografia, nudez e assuntos relacionados a este, caso aconteça o membro será advertido e sofrerá as devidas punições, e em caso de coisas absurdas as autoridades serão notificadas para tomar as devidas medidas judiciais. Não nos responsabilizamos pelo que vocês falam e postam nos canais do servidor.
-=====================================================`)
-.addField('**PUNIÇÕES**', `1 ª Advertência - Mute(canais de texto e áudio) de 20 minutos;
-2 ª Advertência - Mute(canais de texto e áudio) de 40 minutos;
-3 ª Advertência - Mute(canais de texto e áudio)  por 24 horas;
-4 ª  Advertência - Banimento permanente do servidor.
-
-Quaisquer dúvidas, por gentileza comunique o <@&699053134659453029>.
-
-Obrigado a todos que leram @everyone.`);
+  .setDescription(`COLOQUE AS REGRAS QUE DESEJA AQUI`);
 rulesChannel.send(regras);
 } 
-});*/
+});
